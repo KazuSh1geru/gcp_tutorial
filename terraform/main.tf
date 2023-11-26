@@ -1,3 +1,11 @@
+# プロジェクトの明示: Configure the Google Cloud provider
+# provider "google" {
+#  project = "your-project-id"
+#  region  = "us-west1"
+#  zone    = "us-west1-a"
+#}
+
+
 resource "google_compute_network" "vpc_network" {
   name                    = "my-custom-mode-network"
   auto_create_subnetworks = false
